@@ -42,6 +42,7 @@ For use only apache with php, initialize php and the following apache script :
 ```sh
 # git config --global user.email "contact@damien-millet.dev"
 # git config --global user.name "damienmillet"
+# apk add github-cli && gh auth login # if private repository
 # /dwb/scripts/symfony.sh
 ```
 
