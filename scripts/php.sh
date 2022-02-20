@@ -25,7 +25,6 @@ sed -i 's#display_errors = Off#display_errors = On#' /etc/${php_version}/php.ini
 sed -i 's#display_startup_errors = Off#display_startup_errors = On#' /etc/${php_version}/php.ini && \
 sed -i 's#error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT#error_reporting = E_ALL#' /etc/${php_version}/php.ini && \
 sed -i 's#;zend_extension=xdebug.so#zend_extension=xdebug.so#' /etc/${php_version}/conf.d/50_xdebug.ini && \
-sed -i 's#;xdebug.mode=off#xdebug.mode=on#' /etc/${php_version}/conf.d/50_xdebug.ini && \
 echo "xdebug.color = 1" >> /etc/${php_version}/conf.d/50_xdebug.ini
 
 echo "export PATH=/root/.composer/vendor/bin:$PATH" >> /etc/profile
