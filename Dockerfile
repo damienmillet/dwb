@@ -12,6 +12,8 @@ RUN adduser -D dwb
 
 VOLUME /home/dwb/.ssh
 
+RUN chown dwb:dwb /home/dwb/.ssh
+
 EXPOSE 80 8000 3000 8080 443 3306
 
 RUN apk add --no-cache git npm composer nano openssh
