@@ -28,5 +28,5 @@ RUN echo "port :" $(cat /etc/ssh/sshd_config | grep -E '#Port\s(\d.*)' | tail -n
 
 RUN chmod +x /dwb/scripts/*
 # ENTRYPOINT ["/dwb/entrypoint.sh"]
-CMD ["/usr/sbin/sshd", "< /dev/null &"]
+CMD ["/usr/sbin/sshd", "-D"]
 
