@@ -8,7 +8,7 @@ WORKDIR /app
 
 VOLUME /app
 
-RUN adduser -D dwb
+RUN adduser -D dwb -id 1024
 
 VOLUME /home/dwb/.ssh
 
